@@ -28,7 +28,7 @@ for i in range(1,51):
 
 print(books)
 
-with open('books.csv', 'w', encoding='utf8', newline='') as output_file:
+with open('books.csv', 'w', encoding='utf-8-sig', newline='') as output_file:
     fc = csv.DictWriter(output_file, fieldnames=["Title","Price","Rating"])
     fc.writeheader()
     fc.writerows(books)
